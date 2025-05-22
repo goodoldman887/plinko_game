@@ -2,7 +2,7 @@
   <img src="./static/android-chrome-192x192.png" width="100" height="100" alt="Logo">
   <h1>plinko-game</h1>
   <p>A web Plinko game inspired by Stake.com's Plinko game.</p>
-  <p>Play now 👉 <a href="https://plinko-web-game.netlify.app/" target="_blank" rel="noreferrer">https://plinko-web-game.netlify.app/</a></p>
+  <p>Play now 👉 <a href="https://plinko-webgame.netlify.app/" target="_blank" rel="noreferrer">https://plinko-webgame.netlify.app/</a></p>
   <img src="./screenshots/desktop-1.jpg" width="800">
 </div>
 
