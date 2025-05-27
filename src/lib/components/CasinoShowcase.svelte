@@ -68,4 +68,75 @@
 </div>
 <!-- Конец витрины -->
 
-<style src="$lib/assets/css/showcase.css"></style>
+<style>
+  :global(.showcase__wrapper) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  :global(.showcase) {
+    background: #1c1a4b;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  :global(.showcase__link) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  :global(.showcase__item) {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  :global(.showcase__item-right) {
+    background: #151533;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  :global(.showcase__img img) {
+    height: 40px;
+    width: auto;
+    border-radius: 0.25rem;
+  }
+
+  :global(.showcase__title span) {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  :global(.showcase__rating) {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  :global(.showcase__rating-item img) {
+    height: 16px;
+    width: 16px;
+  }
+
+  :global(.showcase__btn) {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+  }
+
+  :global(.showcase__btn:hover) {
+    background: #1e4bb8;
+  }
+</style>
