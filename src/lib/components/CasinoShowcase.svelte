@@ -26,7 +26,42 @@
       </div>
     </a>
   </div>
-  <!-- Скопируйте блок .showcase ещё 4 раза с заменой:
+
+  <div class="showcase">
+    <a href="/link/wbetz/" class="showcase__link" target="_blank" rel="nofollow" noindex>
+      <div class="showcase__item">
+        <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
+        <div class="showcase__title"><span>Wbetz</span></div>
+      </div>
+      <div class="showcase__item showcase__item-right">
+        <div class="showcase__rating">
+          {#each Array(5) as _}
+            <div class="showcase__rating-item"><img src={rating} alt="rating" /></div>
+          {/each}
+        </div>
+        <div class="showcase__btn">Toneelstuk</div>
+      </div>
+    </a>
+  </div>
+  
+  <div class="showcase">
+    <a href="/link/casinolab/" class="showcase__link" target="_blank" rel="nofollow" noindex>
+      <div class="showcase__item">
+        <div class="showcase__img"><img src={casinolab} alt="casinolab" /></div>
+        <div class="showcase__title"><span>Casinolab</span></div>
+      </div>
+      <div class="showcase__item showcase__item-right">
+        <div class="showcase__rating">
+          {#each Array(5) as _}
+            <div class="showcase__rating-item"><img src={rating} alt="rating" /></div>
+          {/each}
+        </div>
+        <div class="showcase__btn">Toneelstuk</div>
+      </div>
+    </a>
+  </div>
+  
+<!-- Скопируйте блок .showcase ещё 4 раза с заменой:
        - пути: /link/.../, logo {wbetz,casinolab,gransino,fatpirate}
        - alt и span текст
   -->
