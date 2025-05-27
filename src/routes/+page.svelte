@@ -7,6 +7,7 @@
   import Sidebar from '$lib/components/Sidebar';
   import { setBalanceFromLocalStorage, writeBalanceToLocalStorage } from '$lib/utils/game';
   import GitHubLogo from 'phosphor-svelte/lib/GithubLogo';
+  import CasinoShowcase from '$lib/components/CasinoShowcase.svelte';
 
   $effect(() => {
     setBalanceFromLocalStorage();
@@ -36,6 +37,7 @@
     </div>
   </div>
 
+  <CasinoShowcase />
   <SettingsWindow />
   <LiveStatsWindow />
 
