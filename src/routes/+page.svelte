@@ -35,6 +35,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 6px 10px rgba(0,0,0,0.4);
   }
+
   /* Heading sizes */
   :global(.prose h1) {
     font-size: 2.5rem;
@@ -49,11 +50,6 @@
   :global(.prose h3) {
     margin-top: 1.5rem;
     font-size: 1.25rem;
-  }
-    background: #1f2937;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
   }
 
   /* Table styling within prose */
@@ -81,20 +77,6 @@
   :global(.prose tbody tr:nth-child(even)) {
     background: #1f2937;
   }
-
-  /* Split description into subsections headings */
-  :global(.prose h2) {
-    margin-top: 2rem;
-    border-bottom: 1px solid #2d3748;
-    padding-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  :global(.prose h3) {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-  }
-
-  /* Merge any other page-specific CSS here */
 </style>
 
 <div class="relative flex min-h-dvh w-full flex-col bg-gray-900 text-gray-100">
