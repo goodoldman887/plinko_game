@@ -36,20 +36,57 @@
     box-shadow: 0 6px 10px rgba(0,0,0,0.4);
   }
 
+  /* Table styling within prose */
+  :global(.prose table) {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+  }
+  :global(.prose th),
+  :global(.prose td) {
+    padding: 0.75rem;
+    border: none;
+  }
+  :global(.prose thead) {
+    background: #2d3748;
+  }
+  :global(.prose thead th) {
+    font-weight: bold;
+    color: #edf2f7;
+  }
+  :global(.prose tbody tr:nth-child(odd)) {
+    background: #2a303c;
+  }
+  :global(.prose tbody tr:nth-child(even)) {
+    background: #1f2937;
+  }
+
+  /* Split description into subsections headings */
+  :global(.prose h2) {
+    margin-top: 2rem;
+    border-bottom: 1px solid #2d3748;
+    padding-bottom: 0.5rem;
+  }
+  :global(.prose h3) {
+    margin-top: 1.5rem;
+  }
+
   /* Merge any other page-specific CSS here */
 </style>
 
 <div class="relative flex min-h-dvh w-full flex-col bg-gray-900 text-gray-100">
   <!-- Navigation -->
   <nav class="sticky top-0 z-10 w-full bg-gray-800 px-5 py-3 drop-shadow-md">
-    <div class="mx-auto flex h-14 max-w-7xl items-center justify-between">
-      <img src={logo} alt="logo" class="h-6 sm:h-7" />
-      <div class="mx-auto"><Balance /></div>
-      <a href="https://github.com/goodoldman887/plinko_game" class="play-button" target="_blank">
-        <GitHubLogo size={24} />
-      </a>
-    </div>
-  </nav>
+  <div class="mx-auto flex h-14 max-w-7xl items-center justify-between">
+    <img src={logo} alt="logo" class="h-6 sm:h-7" />
+    <Balance />
+    <!-- GitHub Icon Top Right -->
+    <a href="https://github.com/goodoldman887/plinko_game" target="_blank" class="ml-auto">
+      <GitHubLogo size={24} />
+    </a>
+  </div>
+</nav>
 
   <!-- Main Content -->
   <main class="flex-1">
@@ -202,11 +239,11 @@
 
   <!-- Footer -->
   <footer class="px-5 pt-16 pb-4 text-sm text-gray-400">
-  <div class="mx-auto max-w-4xl">
-    <div aria-hidden="true" class="h-px bg-gray-700 mb-4"></div>
-    <div class="flex justify-between">
-      <a href="https://github.com/goodoldman887/plinko_game" target="_blank" class="underline hover:no-underline">Repository</a>
+    <div class="mx-auto max-w-4xl">
+      <div aria-hidden="true" class="h-px bg-gray-700 mb-4"></div>
+      <div class="flex justify-center">
+        <span>© 2025 Plinko Game. All rights reserved.</span>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </div>
