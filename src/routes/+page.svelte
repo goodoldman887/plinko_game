@@ -15,23 +15,28 @@
 </script>
 
 <style>
+  /* Component spacing */
   .section {
     margin: 2rem 0;
   }
-  /* Existing global styles and component-specific CSS below */
+
+  /* Global styles */
   :global(body) {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background: #111827;
     color: #e5e7eb;
   }
+
+  /* Prose styling for description section */
   :global(section.prose) {
     background: #1f2937;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 6px 10px rgba(0,0,0,0.4);
   }
-  /* Additional global styling for headings, lists, navs kept as is */
+
+  /* Merge any other page-specific CSS here */
 </style>
 
 <div class="relative flex min-h-dvh w-full flex-col bg-gray-900 text-gray-100">
@@ -46,7 +51,7 @@
     </div>
   </nav>
 
-  <!-- Main Content Wrapper -->
+  <!-- Main Content -->
   <main class="flex-1">
     <!-- 1. Demo at the top -->
     <section id="plinko-demo" class="section demo px-5">
@@ -63,21 +68,18 @@
       <CasinoShowcase />
     </section>
 
-    <!-- 3. Text section with proper headings in English -->
+    <!-- 3. Description section -->
     <section class="prose prose-invert section description mx-auto px-5 py-8 max-w-4xl">
       <h1>Welcome to the Plinko Game</h1>
 
       <h2>Game Overview</h2>
       <p>
-        The Plinko Game is a physics-based simulation inspired by the classic Plinko board from game shows.
-        Players drop chips from the top and watch how gravity and collisions determine their path, showcasing randomness
-        and probability in an engaging way.
+        The Plinko Game is a physics-based simulation inspired by the classic Plinko board from game shows. Players drop chips from the top and watch how gravity and collisions determine their path, showcasing randomness and probability in an engaging way.
       </p>
 
       <h2>How to Play</h2>
       <p>
-        Click or tap anywhere along the top edge of the board to release a chip. Adjust the gravity and chip size settings
-        to explore different behaviors, and observe how each chip bounces off pegs before landing in one of the slots at the bottom.
+        Click or tap anywhere along the top edge of the board to release a chip. Adjust the gravity and chip size settings to explore different behaviors, and observe how each chip bounces off pegs before landing in one of the slots at the bottom.
       </p>
 
       <h3>Controls and Settings</h3>
@@ -89,13 +91,12 @@
 
       <h3>Statistics and Distribution</h3>
       <p>
-        The game tracks the number of chips in each slot in real time and displays a live histogram
-        to help you analyze outcome distributions and probability trends.
+        The game tracks the number of chips in each slot in real time and displays a live histogram to help you analyze outcome distributions and probability trends.
       </p>
     </section>
   </main>
 
-  <!-- Modal windows -->
+  <!-- Modals -->
   <SettingsWindow />
   <LiveStatsWindow />
 
@@ -109,74 +110,3 @@
     </div>
   </footer>
 </div>
-
-
-<style>
-  /* Общие стили страницы */
-  :global(body) {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #111827;
-    color: #e5e7eb;
-  }
-
-  /* Кнопка PLAY */
-  :global(.play-button) {
-    display: inline-block;
-    background: #0ea5e9;
-    color: #ffffff;
-    font-weight: 600;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.375rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: background 0.2s, transform 0.2s;
-    text-decoration: none;
-  }
-  :global(.play-button:hover) {
-    background: #0284c7;
-    transform: translateY(-2px);
-  }
-
-  /* Секция информации */
-  :global(section.prose) {
-    background: #1f2937;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
-  }
-
-  /* Определения dl/dt/dd */
-  :global(.info-list dt) {
-    font-weight: 600;
-    color: #f3f4f6;
-  }
-  :global(.info-list dd) {
-    margin-left: 0.5rem;
-    color: #9ca3af;
-  }
-
-  /* Меню-якоря */
-  :global(.toc a) {
-    color: #60a5fa;
-    text-decoration: none;
-    padding: 0.25rem;
-    transition: color 0.2s;
-  }
-  :global(.toc a:hover) {
-    color: #3b82f6;
-    text-decoration: underline;
-  }
-
-  /* Заголовки внутри секции */
-  :global(section.prose h2) {
-    margin-top: 1.5rem;
-    color: #ffffff;
-    border-bottom: 2px solid #374151;
-    padding-bottom: 0.25rem;
-  }
-
-  /* Списки */
-  :global(section.prose ul, section.prose ol) {
-    margin-left: 1rem;
-  }
-</style>
