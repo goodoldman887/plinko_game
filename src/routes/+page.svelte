@@ -35,6 +35,26 @@
     border-radius: 0.5rem;
     box-shadow: 0 6px 10px rgba(0,0,0,0.4);
   }
+  /* Heading sizes */
+  :global(.prose h1) {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  :global(.prose h2) {
+    margin-top: 2rem;
+    border-bottom: 1px solid #2d3748;
+    padding-bottom: 0.5rem;
+    font-size: 1.75rem;
+  }
+  :global(.prose h3) {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+    background: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+  }
 
   /* Table styling within prose */
   :global(.prose table) {
@@ -67,9 +87,11 @@
     margin-top: 2rem;
     border-bottom: 1px solid #2d3748;
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
   :global(.prose h3) {
     margin-top: 1.5rem;
+    font-size: 1rem;
   }
 
   /* Merge any other page-specific CSS here */
@@ -108,128 +130,129 @@
 
     <!-- 3. Description section -->
     <section class="prose prose-invert section description mx-auto w-full max-w-7xl">
-  <!-- Full provided text, in Russian -->
-  <h1 id="intro">Plinko Casino: Обзор и правила игры</h1>
+  <!-- Full provided text translated to English -->
+<section class="prose prose-invert section description mx-auto w-full max-w-7xl">
+  <h1 id="intro">Plinko Casino: Overview and Game Rules</h1>
   <p>
-    Погрузитесь в увлекательный мир Plinko прямо сейчас! Чтобы начать, зарегистрируйтесь на официальном сайте,
-    получите приветственный бонус и найдите ответы на все вопросы в наших подробных разделах.
+    Dive into the exciting world of Plinko right now! To get started, register on the official website,
+    claim your welcome bonus, and find answers to all your questions in our detailed sections below.
   </p>
 
-  <h2 id="quick-info">Краткая информация об игре</h2>
+  <h2 id="quick-info">Quick Game Information</h2>
   <table>
     <thead>
-      <tr><th>Параметр</th><th>Описание</th></tr>
+      <tr><th>Aspect</th><th>Description</th></tr>
     </thead>
     <tbody>
-      <tr><td>🌐 Официальный ресурс</td><td>www.plinko.org</td></tr>
-      <tr><td>🎮 Тип игры</td><td>Азартная, слот</td></tr>
-      <tr><td>💻 Платформы</td><td>Stake, Roobet и другие онлайн-казино</td></tr>
-      <tr><td>⚙️ Механика</td><td>Случайное движение фишек через дорожку с штырьками</td></tr>
-      <tr><td>🎯 Цель</td><td>Фишка отскакивает от штырьков и падает в призовую ячейку</td></tr>
-      <tr><td>💵 Ставки</td><td>Фиат и криптовалюты</td></tr>
-      <tr><td>🎲 Уровни риска</td><td>Низкий, средний, высокий</td></tr>
-      <tr><td>🆓 Демонстрационный режим</td><td>Доступен на большинстве платформ</td></tr>
-      <tr><td>🔑 Особенности</td><td>Простая авторизация, мультиверсии, бонусы</td></tr>
+      <tr><td>🌐 Official Website</td><td>www.plinko.org</td></tr>
+      <tr><td>🎮 Game Type</td><td>Gambling, Slot</td></tr>
+      <tr><td>💻 Platforms</td><td>Stake, Roobet, and other online casinos</td></tr>
+      <tr><td>⚙️ Mechanics</td><td>Random chip movement through a peg board</td></tr>
+      <tr><td>🎯 Objective</td><td>Chip bounces off pegs and lands in a prize slot</td></tr>
+      <tr><td>💵 Bets</td><td>Fiat and cryptocurrencies</td></tr>
+      <tr><td>🎲 Risk Levels</td><td>Low, Medium, High</td></tr>
+      <tr><td>🆓 Demo Version</td><td>Available on most platforms</td></tr>
+      <tr><td>🔑 Features</td><td>Easy login, multiple versions, bonuses</td></tr>
     </tbody>
   </table>
 
-  <h2 id="how-to-start">Как начать играть в Plinko</h2>
+  <h2 id="how-to-start">How to Start Playing Plinko</h2>
   <ol>
-    <li><strong>Выбор ставки.</strong> Задайте размер фишки перед стартом — он влияет на возможный выигрыш.</li>
-    <li><strong>Установка риска.</strong> Выберите один из трёх уровней: низкий, средний или высокий — от этого зависят множители выплат и волатильность.</li>
-    <li><strong>Сброс фишки.</strong> Нажмите кнопку «Старт» и наблюдайте, как фишка отскакивает от ряда штырьков.</li>
-    <li><strong>Получение приза.</strong> По итогам падения фишки в определённую ячейку вы получите выигрыш, умноженный на коэффициент этой ячейки.</li>
+    <li><strong>Choose Your Bet:</strong> Set the chip size before starting — it affects potential winnings.</li>
+    <li><strong>Set Risk Level:</strong> Select Low, Medium, or High risk — this determines payout multipliers and volatility.</li>
+    <li><strong>Drop the Chip:</strong> Press the “Start” button and watch the chip bounce off the pegs.</li>
+    <li><strong>Collect Winnings:</strong> After the chip falls into a slot, you receive a payout multiplied by that slot’s coefficient.</li>
   </ol>
 
-  <h2 id="general-info">Общие сведения об онлайн-Plinko</h2>
+  <h2 id="general-info">General Information about Online Plinko</h2>
   <ul>
-    <li><strong>Приключение удачи и стратегии.</strong> Фишка движется хаотично, но выбор риска позволяет чуть влиять на исход.</li>
-    <li><strong>Разнообразие форматов.</strong> На разных площадках число штырьков и ячеек может отличаться, а разработчики добавляют уникальные фишки (анимации, мини-игры).</li>
-    <li><strong>Поддержка криптовалют.</strong> Биткоин, Эфириум и другие — удобный способ моментально пополнять баланс и выводить средства.</li>
-    <li><strong>Честная генерация.</strong> Надёжные казино используют сертифицированные алгоритмы для случайных результатов.</li>
-    <li><strong>Лицензирование.</strong> Ищите платформы с действующей лицензией, чтобы быть уверенным в безопасности.</li>
+    <li><strong>Luck & Strategy:</strong> The chip moves unpredictably, but risk selection adds a strategic element.</li>
+    <li><strong>Different Formats:</strong> Peg count and slot layouts vary across platforms; some add animations and mini-games.</li>
+    <li><strong>Crypto Support:</strong> Bitcoin, Ethereum, and other cryptocurrencies for instant deposits and withdrawals.</li>
+    <li><strong>Fair RNG:</strong> Licensed casinos use certified random number generators for transparent results.</li>
+    <li><strong>Licensing:</strong> Choose platforms with valid licenses to ensure safe gameplay.</li>
   </ul>
 
-  <h2 id="reviews">Отзывы игроков</h2>
+  <h2 id="reviews">Player Reviews</h2>
   <ul>
-    <li>Великолепный баланс между риском и наградой.</li>
-    <li>Возможность быстро получить крупный выигрыш.</li>
-    <li>Удобный интерфейс как для новичков, так и для опытных игроков.</li>
+    <li>Excellent balance between risk and reward.</li>
+    <li>Chance for big wins in a single drop.</li>
+    <li>Intuitive interface for both newcomers and experienced players.</li>
   </ul>
 
-  <h2 id="strategies">Стратегии и советы</h2>
+  <h2 id="strategies">Strategies and Tips</h2>
   <ul>
-    <li><strong>Стабильные ставки.</strong> Фиксируйте размер фишки, чтобы избежать резких потерь.</li>
-    <li><strong>Мартингейл.</strong> Удваивайте ставку после проигрыша и возвращайтесь к первоначальной после выигрыша. Подойдёт при большом бюджете.</li>
-    <li><strong>Анти-Мартингейл.</strong> Увеличивайте ставку после победы и снижайте после поражения, чтобы ловить серии удач.</li>
-    <li><strong>Демо-режим.</strong> Попрактикуйтесь без риска, тестируя разные уровни риска и стратегии.</li>
-    <li><strong>Банкролл-менеджмент.</strong> Заранее устанавливайте лимиты выигрышей и проигрышей, чтобы не выйти за рамки бюджета.</li>
+    <li><strong>Flat Betting:</strong> Keep your bet size consistent to manage losses.</li>
+    <li><strong>Martingale:</strong> Double your bet after a loss and reset after a win. Suited for large budgets.</li>
+    <li><strong>Anti-Martingale:</strong> Increase your bet after a win and decrease after a loss to ride winning streaks.</li>
+    <li><strong>Use Demo Mode:</strong> Practice without risk to test different strategies and risk levels.</li>
+    <li><strong>Bankroll Management:</strong> Set win/loss limits to stay within budget.</li>
   </ul>
 
-  <h2 id="versions">Особенности разных версий Plinko</h2>
+  <h2 id="versions">Features of Different Plinko Versions</h2>
   <ul>
-    <li><strong>Plinko Slot.</strong> Сочетание механики Plinko и элементов слот-машин с бонусными раундами и особыми символами.</li>
-    <li><strong>Крипто-Plinko.</strong> Анонимные и быстрые транзакции благодаря блокчейну, дополнительные промоакции для держателей криптовалют.</li>
-    <li><strong>Версии от разработчиков.</strong> BGaming делает яркую графику, Spribe внедряет интерактивные элементы и нестандартные бонусы.</li>
+    <li><strong>Plinko Slot:</strong> Combines Plinko mechanics with slot machine features like bonus rounds and special symbols.</li>
+    <li><strong>Crypto Plinko:</strong> Anonymity and fast transactions powered by blockchain, plus crypto-specific promotions.</li>
+    <li><strong>Developer Variants:</strong> BGaming offers vibrant graphics, Spribe adds interactive elements and unique bonuses.</li>
   </ul>
 
-  <h2 id="getting-started">Шаги для старта игры</h2>
+  <h2 id="getting-started">Steps to Begin Playing</h2>
   <ol>
-    <li>Выбор площадки. Оцените лицензии, отзывы и поддерживаемые способы оплаты.</li>
-    <li>Регистрация. Заполните простую форму и пройдите верификацию (при необходимости).</li>
-    <li>Демо/Реальная игра. Решите, хотите ли вы сначала потренироваться или сразу играть на деньги.</li>
-    <li>Депозит. Пополните счёт удобным способом: банковской картой, электронным кошельком или криптовалютой.</li>
-    <li>Настройка ставок. Укажите сумму фишки и уровень риска.</li>
-    <li>Игра. Сбросьте фишку и следите за её полётом!</li>
+    <li>Select a platform by checking licenses, reviews, and payment options.</li>
+    <li>Register and complete verification if required.</li>
+    <li>Choose between demo and real-money modes.</li>
+    <li>Deposit funds via card, e-wallet, or cryptocurrency.</li>
+    <li>Set your chip size and risk level.</li>
+    <li>Drop the chip and enjoy the game!</li>
   </ol>
 
-  <h2 id="recommendations">Важные рекомендации</h2>
+  <h2 id="recommendations">Important Recommendations</h2>
   <ul>
-    <li>Играйте ответственно. Устанавливайте лимиты по времени и суммам.</li>
-    <li>Изучайте промо-акции. Многие казино дарят бонусы на первые депозиты и коды на бесплатные ходы.</li>
-    <li>Читайте отзывы. Узнайте опыт других игроков перед выбором площадки.</li>
+    <li>Play responsibly by setting time and budget limits.</li>
+    <li>Look for promotions — welcome bonuses and free spins can boost your bankroll.</li>
+    <li>Read player feedback before choosing a platform.</li>
   </ul>
 
-  <h2 id="real-money">Plinko на реальные деньги</h2>
+  <h2 id="real-money">Plinko for Real Money</h2>
   <p>
-    Игра на реальные ставки добавляет азарта:
+    Real-money play adds extra excitement:
   </p>
   <ul>
-    <li>Настоящий выигрыш. Зависит от размера ставки, уровня риска и результирующего множителя.</li>
-    <li>Бонусы и фриспины. Промо-акции увеличивают шансы выиграть, предоставляя дополнительные кредиты.</li>
-    <li>Лицензированные казино. Убедитесь, что площадка регулируется для безопасной игры.</li>
+    <li>Actual payouts depend on bet size, risk level, and slot multiplier.</li>
+    <li>Bonuses and free spins increase your chances by providing extra credits.</li>
+    <li>Always choose licensed casinos for secure gameplay.</li>
   </ul>
 
-  <h2 id="demo-mode">Демонстрационный режим</h2>
+  <h2 id="demo-mode">Demo Mode</h2>
   <p>
-    Потренируйтесь в демо, чтобы:
+    Practice in demo mode to:
   </p>
   <ul>
-    <li>Понять механику отскока фишки.</li>
-    <li>Оценить, как меняются выплаты при разных уровнях риска.</li>
-    <li>Испробовать несколько стратегий без потери реальных денег.</li>
+    <li>Understand chip bounce mechanics.</li>
+    <li>See how payouts change with risk levels.</li>
+    <li>Test multiple strategies without losing real money.</li>
   </ul>
 
   <h2 id="faq">FAQ</h2>
-  <h3>1. Что такое Plinko Casino?</h3>
+  <h3>1. What is Plinko Casino?</h3>
   <p>
-    Это азартная игра, где фишка падает через сетку со штырьками, а вы получаете выигрыш в зависимости от ячейки, куда она попадёт.
+    A gambling game where a chip falls through a grid of pegs and you win based on the slot it lands in.
   </p>
-  <h3>2. Легальна ли игра?</h3>
+  <h3>2. Is it legal?</h3>
   <p>
-    Законность зависит от юрисдикции и наличия лицензии у казино. Перед регистрацией проверьте правила в вашей стране.
+    Legality depends on your jurisdiction and the casino’s licensing. Always check local laws before registering.
   </p>
-  <h3>3. Можно ли реально выиграть?</h3>
+  <h3>3. Can I really win?</h3>
   <p>
-    Да, при удачном стечении обстоятельств и правильном управлении банкроллом.
+    Yes, with luck and proper bankroll management.
   </p>
-  <h3>4. Стоит ли пользоваться криптовалютой?</h3>
+  <h3>4. Should I use cryptocurrency?</h3>
   <p>
-    Крипто-платежи обеспечивают анонимность и мгновенные транзакции, но требуют базовых знаний работы с цифровыми активами.
+    Crypto offers anonymity and instant transactions but requires basic blockchain knowledge.
   </p>
-  <h3>5. Есть ли стратегии?</h3>
+  <h3>5. Are there any strategies?</h3>
   <p>
-    Хотя результат определяется случайностью, выбор уровня риска и грамотное управление ставками помогают минимизировать потери.
+    While outcomes are random, risk selection and bet management can help minimize losses.
   </p>
 </section>
       </div>
