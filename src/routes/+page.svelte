@@ -90,6 +90,7 @@
 
   <!-- Main Content -->
   <main class="flex-1">
+    <div class="mx-auto w-full max-w-7xl px-5">
     <!-- 1. Demo at the top -->
     <section id="plinko-demo" class="section demo px-5">
       <div class="mx-auto mt-5 min-w-[300px] max-w-xl drop-shadow-xl md:mt-10 lg:max-w-7xl">
@@ -231,7 +232,8 @@
     Хотя результат определяется случайностью, выбор уровня риска и грамотное управление ставками помогают минимизировать потери.
   </p>
 </section>
-  </main>
+      </div>
+</main>
 
   <!-- Modals -->
   <SettingsWindow />
