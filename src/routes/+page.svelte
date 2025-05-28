@@ -7,7 +7,7 @@
   import Sidebar from '$lib/components/Sidebar';
   import CasinoShowcase from '$lib/components/CasinoShowcase.svelte';
   import { setBalanceFromLocalStorage, writeBalanceToLocalStorage } from '$lib/utils/game';
-  import GitHubLogo from 'phosphor-svelte/lib/GithubLogo';
+  
 
   $effect(() => {
     setBalanceFromLocalStorage();
@@ -78,13 +78,13 @@
 <div class="relative flex min-h-dvh w-full flex-col bg-gray-900 text-gray-100">
   <!-- Navigation -->
   <nav class="sticky top-0 z-10 w-full bg-gray-800 px-5 py-3 drop-shadow-md">
-  <div class="mx-auto flex h-14 max-w-7xl items-center justify-between">
+  <div class="relative mx-auto flex h-14 max-w-7xl items-center">
+    <!-- Logo on the left -->
     <img src={logo} alt="logo" class="h-6 sm:h-7" />
-    <Balance />
-    <!-- GitHub Icon Top Right -->
-    <a href="https://github.com/goodoldman887/plinko_game" target="_blank" class="ml-auto">
-      <GitHubLogo size={24} />
-    </a>
+    <!-- Balance centered -->
+    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <Balance />
+    </div>
   </div>
 </nav>
 
@@ -244,7 +244,11 @@
     <div class="mx-auto max-w-4xl">
       <div aria-hidden="true" class="h-px bg-gray-700 mb-4"></div>
       <div class="flex justify-center">
-        <span>© 2025 Plinko Game. All rights reserved.</span>
+        <a href="https://github.com/goodoldman887/plinko_game" target="_blank" class="hover:opacity-75">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.07 3.633 16.7 3.633 16.7c-1.087-.743.084-.728.084-.728 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.014 2.896-.014 3.286 0 .32.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
