@@ -107,7 +107,7 @@
     </section>
 
     <!-- 3. Description section -->
-    <section class="prose prose-invert section description mx-auto px-5 py-8 max-w-4xl">
+    <section class="prose prose-invert section description mx-auto w-full max-w-7xl">
   <!-- Full provided text, in Russian -->
   <h1 id="intro">Plinko Casino: Обзор и правила игры</h1>
   <p>
@@ -243,7 +243,7 @@
   <footer class="px-5 pt-16 pb-4 text-sm text-gray-400">
     <div class="mx-auto max-w-4xl">
       <div aria-hidden="true" class="h-px bg-gray-700 mb-4"></div>
-      <div class="flex justify-center">
+      <div class="flex justify-end">
         <a href="https://github.com/goodoldman887/plinko_game" target="_blank" class="hover:opacity-75">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.07 3.633 16.7 3.633 16.7c-1.087-.743.084-.728.084-.728 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.014 2.896-.014 3.286 0 .32.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
