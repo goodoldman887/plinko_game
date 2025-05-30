@@ -31,8 +31,8 @@
   <div class="showcase">
     <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
       <div class="showcase__item">
-        <div class="showcase__img"><img src={gonzabet} alt="gonzabet" /></div>
-        <div class="showcase__title"><span>Gonzabet</span></div>
+        <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
+        <div class="showcase__title"><span>Wbetz</span></div>
       </div>
       <div class="showcase__item showcase__item-right">
         <div class="showcase__rating">
@@ -44,6 +44,7 @@
       </div>
     </a>
   </div>
+
 
 
   <!-- Casinolab -->
