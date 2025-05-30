@@ -138,6 +138,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 600;
+    margin-top: 0.5rem;
   }
 
   :global(.showcase__btn:hover) {
