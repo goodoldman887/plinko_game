@@ -11,9 +11,9 @@
 <div class="showcase__wrapper">
   <!-- Gonzabet -->
   <div class="showcase">
-    <a href="/link/gonzabet/" class="showcase__link" target="_blank" rel="nofollow" noindex>
+    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
       <div class="showcase__item">
-        <div class="showcase__img"><img src={gonzabet} alt="gonzabet" /></div>
+        <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
         <div class="showcase__title"><span>Gonzabet</span></div>
       </div>
       <div class="showcase__item showcase__item-right">
@@ -130,15 +130,13 @@
   }
 
   :global(.showcase__btn) {
-    background: #2563eb;
-    color: #ffffff;
+    background: #5b6cff;
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
-    margin-left: 1rem;
-    font-size: 0.875rem;
     font-weight: 600;
-    cursor: pointer;
-    transition: background .2s;
+    margin-top: 0.75rem;
+    margin-right: 1rem;
   }
 
   :global(.showcase__btn:hover) {
