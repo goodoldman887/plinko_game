@@ -9,7 +9,7 @@
 
 <!-- Начало витрины -->
 <div class="showcase__wrapper">
-  <!-- Пример: Gonzabet -->
+  <!-- Gonzabet -->
   <div class="showcase">
     <a href="/link/gonzabet/" class="showcase__link" target="_blank" rel="nofollow" noindex>
       <div class="showcase__item">
@@ -27,11 +27,12 @@
     </a>
   </div>
 
+  <!-- Wbetz -->
   <div class="showcase">
-    <a href="/link/wbetz/" class="showcase__link" target="_blank" rel="nofollow" noindex>
+    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
       <div class="showcase__item">
-        <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
-        <div class="showcase__title"><span>Wbetz</span></div>
+        <div class="showcase__img"><img src={gonzabet} alt="gonzabet" /></div>
+        <div class="showcase__title"><span>Gonzabet</span></div>
       </div>
       <div class="showcase__item showcase__item-right">
         <div class="showcase__rating">
@@ -43,9 +44,11 @@
       </div>
     </a>
   </div>
-  
+
+
+  <!-- Casinolab -->
   <div class="showcase">
-    <a href="/link/casinolab/" class="showcase__link" target="_blank" rel="nofollow" noindex>
+    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
       <div class="showcase__item">
         <div class="showcase__img"><img src={casinolab} alt="casinolab" /></div>
         <div class="showcase__title"><span>Casinolab</span></div>
@@ -60,6 +63,7 @@
       </div>
     </a>
   </div>
+
   
 <!-- Скопируйте блок .showcase ещё 4 раза с заменой:
        - пути: /link/.../, logo {wbetz,casinolab,gransino,fatpirate}
