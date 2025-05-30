@@ -13,7 +13,7 @@
   <div class="showcase">
     <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
       <div class="showcase__item">
-        <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
+        <div class="showcase__img"><img src={gonzabet} alt="gonzabet" /></div>
         <div class="showcase__title"><span>Gonzabet</span></div>
       </div>
       <div class="showcase__item showcase__item-right">
@@ -78,7 +78,10 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
+
 
   :global(.showcase) {
     background: #1c1a4b;
@@ -135,8 +138,6 @@
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 600;
-    margin-top: 0.75rem;
-    margin-right: 1rem;
   }
 
   :global(.showcase__btn:hover) {
