@@ -2,8 +2,6 @@
   import gonzabet from '$lib/assets/gonzabet.webp';
   import wbetz from '$lib/assets/wbetz.webp';
   import casinolab from '$lib/assets/casinolab.webp';
-  import gransino from '$lib/assets/gransino.webp';
-  import fatpirate from '$lib/assets/fatpirate.webp';
   import rating from '$lib/assets/rating.svg';
 </script>
 
@@ -11,7 +9,7 @@
 <div class="showcase__wrapper">
   <!-- Gonzabet -->
   <div class="showcase">
-    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
+    <div class="showcase__link">
       <div class="showcase__item">
         <div class="showcase__img"><img src={gonzabet} alt="gonzabet" /></div>
         <div class="showcase__title"><span>Gonzabet</span></div>
@@ -22,14 +20,16 @@
             <div class="showcase__rating-item"><img src={rating} alt="rating" /></div>
           {/each}
         </div>
-        <div class="showcase__btn">Toneelstuk</div>
+        <div class="showcase__btn" on:click={() => window.location.href = 'https://applogic.top/5TRb1N'}>
+          Toneelstuk
+        </div>
       </div>
-    </a>
+    </div>
   </div>
 
   <!-- Wbetz -->
   <div class="showcase">
-    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
+    <div class="showcase__link">
       <div class="showcase__item">
         <div class="showcase__img"><img src={wbetz} alt="wbetz" /></div>
         <div class="showcase__title"><span>Wbetz</span></div>
@@ -40,16 +40,16 @@
             <div class="showcase__rating-item"><img src={rating} alt="rating" /></div>
           {/each}
         </div>
-        <div class="showcase__btn">Toneelstuk</div>
+        <div class="showcase__btn" on:click={() => window.location.href = 'https://applogic.top/5TRb1N'}>
+          Toneelstuk
+        </div>
       </div>
-    </a>
+    </div>
   </div>
-
-
 
   <!-- Casinolab -->
   <div class="showcase">
-    <a href="https://applogic.top/5TRb1N" class="showcase__link" target="_blank" rel="nofollow">
+    <div class="showcase__link">
       <div class="showcase__item">
         <div class="showcase__img"><img src={casinolab} alt="casinolab" /></div>
         <div class="showcase__title"><span>Casinolab</span></div>
@@ -60,16 +60,12 @@
             <div class="showcase__rating-item"><img src={rating} alt="rating" /></div>
           {/each}
         </div>
-        <div class="showcase__btn">Toneelstuk</div>
+        <div class="showcase__btn" on:click={() => window.location.href = 'https://applogic.top/5TRb1N'}>
+          Toneelstuk
+        </div>
       </div>
-    </a>
+    </div>
   </div>
-
-  
-<!-- Скопируйте блок .showcase ещё 4 раза с заменой:
-       - пути: /link/.../, logo {wbetz,casinolab,gransino,fatpirate}
-       - alt и span текст
-  -->
 </div>
 <!-- Конец витрины -->
 
@@ -78,10 +74,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
-
 
   :global(.showcase) {
     background: #1c1a4b;
@@ -102,34 +95,32 @@
     align-items: center;
   }
 
-  :global(.showcase__item-right) {
-    background: #151533;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-  }
-
   :global(.showcase__img img) {
-    height: 40px;
-    width: auto;
+    max-height: 40px;
     border-radius: 0.25rem;
   }
 
   :global(.showcase__title span) {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     font-weight: 600;
-    color: #ffffff;
     font-size: 1rem;
+    color: white;
+  }
+
+  :global(.showcase__item-right) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   :global(.showcase__rating) {
     display: flex;
-    gap: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   :global(.showcase__rating-item img) {
-    height: 16px;
-    width: 16px;
+    height: 1rem;
+    width: 1rem;
   }
 
   :global(.showcase__btn) {
@@ -138,10 +129,6 @@
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 600;
-    margin-left: 0.5rem;
-  }
-
-  :global(.showcase__btn:hover) {
-    background: #1e4bb8;
+    cursor: pointer;
   }
 </style>
