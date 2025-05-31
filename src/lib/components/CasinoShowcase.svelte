@@ -2,6 +2,8 @@
   import gonzabet from '$lib/assets/gonzabet.webp';
   import wbetz from '$lib/assets/wbetz.webp';
   import casinolab from '$lib/assets/casinolab.webp';
+  import gransino from '$lib/assets/gransino.webp';
+  import fatpirate from '$lib/assets/fatpirate.webp';
   import rating from '$lib/assets/rating.svg';
 </script>
 
@@ -74,7 +76,10 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
+
 
   :global(.showcase) {
     background: #1c1a4b;
@@ -95,32 +100,34 @@
     align-items: center;
   }
 
+  :global(.showcase__item-right) {
+    background: #151533;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
   :global(.showcase__img img) {
-    max-height: 40px;
+    height: 40px;
+    width: auto;
     border-radius: 0.25rem;
   }
 
   :global(.showcase__title span) {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     font-weight: 600;
+    color: #ffffff;
     font-size: 1rem;
-    color: white;
-  }
-
-  :global(.showcase__item-right) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
   }
 
   :global(.showcase__rating) {
     display: flex;
-    margin-bottom: 0.5rem;
+    gap: 0.25rem;
   }
 
   :global(.showcase__rating-item img) {
-    height: 1rem;
-    width: 1rem;
+    height: 16px;
+    width: 16px;
   }
 
   :global(.showcase__btn) {
@@ -129,6 +136,10 @@
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 600;
-    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+
+  :global(.showcase__btn:hover) {
+    background: #1e4bb8;
   }
 </style>
